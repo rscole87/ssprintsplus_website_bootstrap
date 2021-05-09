@@ -397,6 +397,16 @@ select {
   max-width: 300px;
 }
 
+#projects-div .card .product-img-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50%;
+}
+
+#projects-div .card .product-img-div img {
+  max-width: 40%;
+}
+
 #projects-div .card .card-img-top {
   max-height: 75%;
   width: 100%;

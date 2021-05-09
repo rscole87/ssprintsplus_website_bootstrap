@@ -121,7 +121,7 @@ nav {
   background-color: $mediumSecondary;
   padding-bottom: 30px;
 
-  #featured-products-carousel{
+  #featured-products-carousel {
     height: 50vh;
     overflow: hidden;
   }
@@ -282,13 +282,23 @@ select {
     min-height: 350px;
     max-width: 300px;
 
-    & .card-img-top{
+    & .product-img-div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 50%;
+
+      & img {
+        max-width: 40%;
+      }
+    }
+
+    & .card-img-top {
       max-height: 75%;
       width: 100%;
       overflow: hidden;
     }
 
-    & .card-body{
+    & .card-body {
       z-index: 1;
     }
   }

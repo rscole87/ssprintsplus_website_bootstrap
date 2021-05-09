@@ -63,7 +63,11 @@
 
     <template id="project-card-template">
       <div project-container class="card mx-auto my-3">
-        <img project-img src="" class="card-img-top" alt="">
+        <div shirt-img class="product-img-div pt-3">
+          <div>
+            <img design-img src="" class="card-img-top pt-5 mx-auto d-block" alt="">
+          </div>
+        </div>
         <div class="card-body">
           <h3 class="card-title" project-title></h3>
           <p class="card-text" project-description></p>
@@ -106,6 +110,5 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./scripts/main.js" type="module"></script>
-    <script src="./scripts/projects.js" type="module"></script>
   </body>
 </html>

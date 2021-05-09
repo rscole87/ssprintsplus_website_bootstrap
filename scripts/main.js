@@ -1,4 +1,5 @@
 import projects from "./projects.js"
+import shirts from "./shirts.js"
 let template = document.getElementById("project-card-template")
 let cardTemplate = document.getElementById("project-card-template")
 const mobileMenuBttn = document.getElementById("mobile-menu-bttn")
@@ -66,10 +67,17 @@ projectFilter.addEventListener("change", () => {
 //   return projectClone
 // }
 
+const randomColor = () =>{
+  const shirtColors = ['white', 'black', 'blue', 'charcoal', 'gray', 'green', 'hunter', 'navy', 'orange', 'purple', 'red', 'yellow'];
+  let chosenColor = shirtColors[Math.floor(Math.random() * shirtColors.length)];
+  return chosenColor
+}
+
 const printProject = (project) => {
   let projectClone = document.importNode(cardTemplate.content, true)
   projectClone.querySelector("[project-container]").id = project.id
-  projectClone.querySelector("[project-img]").src = `${project.image}`
+  projectClone.querySelector("[design-img]").src = `${project.image}`
+  projectClone.querySelector("[shirt-img]").style.backgroundImage = `url(${shirts[0].colors[randomColor()]})`
   projectClone.querySelector("[project-title]").innerHTML = project.name
   projectClone.querySelector("[project-description]").innerHTML = project.description
   return projectClone
