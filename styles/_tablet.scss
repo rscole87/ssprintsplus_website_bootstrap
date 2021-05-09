@@ -1,0 +1,58 @@
+@mixin tabletStyle {
+  #intro-section {
+    background-image: url(../images/shirt-model2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -90% 0%;
+
+    & #banner-img-div {
+      padding: 70px 0 0 0;
+
+      & #banner-img {
+        max-width: 350px;
+      }
+    }
+  }
+  #about-section {
+    .body-copy {
+      font-size: 18px;
+    }
+
+    & div.wrapper {
+      & .twoCol {
+        & h3 {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+
+  #featured-products-section {
+    min-height: 50vh;
+
+    & #featured-products-div {
+      & .product-thumb {
+        min-width: 350px;
+        min-height: 300px;
+        flex: 1;
+      }
+    }
+  }
+
+  #capabilities-section {
+    padding-bottom: 0px;
+
+    & .capability-heading {
+      font-size: 12px;
+    }
+  }
+
+  #contact-section {
+    min-height: 30vh;
+    & #form-div {
+      & #contact-form {
+        width: 80%;
+      }
+    }
+  }
+}

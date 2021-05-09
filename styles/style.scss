@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./variables";
+@import "./mixins";
+@import "./mobile";
+@import "./tablet";
+@import "./desktop";
+
+body {
+  margin: 0px;
+  @include roboto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.heading-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile-menu-bttn-div {
+  display: none;
+}
+
+nav {
+  background-color: $mediumPrimary;
+  max-height: 100%;
+
+  & .logo {
+    max-width: 60px;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    & li {
+      padding: 0px 20px;
+      & a {
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $lightPrimary;
+        transition: 0.3s ease-in-out;
+      }
+
+      & a:hover {
+        color: $mediumSecondary;
+      }
+    }
+  }
+}
+
+.heading-medium {
+  @include heading();
+}
+
+.page-heading {
+  @include pageHeading();
+}
+
+.bold-weight {
+  font-weight: 800;
+}
+
+#intro-section {
+  height: 75vh;
+  background-color: $lightPrimary;
+}
+
+#about-section {
+  min-height: 50vh;
+  padding: 30px 0px;
+  background-color: $lightComplementary;
+
+  & button {
+    @include bttnStyle();
+    color: $darkSecondary;
+    margin-right: auto;
+  }
+
+  & button:hover {
+    color: $lightComplementary;
+    background-color: $lightPrimary;
+  }
+
+  .body-copy {
+    margin: 0;
+  }
+
+  & h3 {
+    @include heading;
+    margin: 0;
+    padding: 0;
+    color: $lightPrimary;
+  }
+
+  & span.accent-text {
+    color: $lightSecondary;
+    font-style: italic;
+  }
+}
+
+#featured-products-section {
+  min-height: 50vh;
+  background-color: $mediumSecondary;
+  padding-bottom: 30px;
+
+  #featured-products-carousel{
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  & .heading-medium {
+    color: $lightComplementary;
+  }
+
+  & button {
+    @include bttnStyle();
+  }
+
+  & button:hover {
+    color: $lightComplementary;
+    background-color: $lightPrimary;
+  }
+
+  & #featured-products-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    & .product-thumb {
+      flex-grow: 1;
+      background-color: $lightPrimary;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    .product-thumb:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}
+
+#capabilities-section {
+  min-height: 25vh;
+  background-color: $lightPrimary;
+  padding-bottom: 50px;
+
+  & #capabilities-div {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .capability-heading {
+      @include pageHeading();
+      padding: 0;
+      font-size: 20px;
+      color: $mediumPrimary;
+    }
+
+    & .capability-item {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    & .center-item {
+      border-left: 1.5px solid $mediumPrimary;
+      border-right: 1.5px solid $mediumPrimary;
+    }
+  }
+}
+
+#contact-section {
+  min-height: 50vh;
+  background-color: $mediumPrimary;
+  padding-bottom: 30px;
+
+  & .heading-medium {
+    color: $lightComplementary;
+  }
+
+  & .body-copy {
+    color: $lightComplementary;
+    font-weight: 100;
+    max-width: 700px;
+    // text-overflow: ellipsis;
+  }
+
+  & ::placeholder {
+    @include roboto;
+    color: $darkPrimary;
+  }
+
+  & #form-div {
+    display: flex;
+    justify-content: center;
+
+    & #contact-form {
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+
+      & input[type="text"] {
+        @include formInput();
+        min-width: 40%;
+        flex: 1;
+      }
+
+      & input[type="text"]:focus {
+        outline: none;
+      }
+
+      & textarea {
+        @include formInput();
+        width: 100%;
+      }
+
+      & textarea:focus {
+        outline: none;
+      }
+
+      & #submit-bttn-div {
+        margin: 0 auto;
+      }
+
+      & #submit {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        transition-duration: 0.5s;
+        padding: 10px 20px;
+        width: 100%;
+        border: 1px solid $lightPrimary;
+        background-color: transparent;
+      }
+
+      & #submit:hover {
+        background: $mediumSecondary;
+      }
+    }
+  }
+}
+
+select {
+  margin-bottom: 30px;
+}
+
+#products-page-body {
+  background-color: $mediumSecondary;
+}
+
+#projects-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  border-radius: 15px;
+  background-color: $lightSecondary;
+
+  & .card {
+    min-height: 350px;
+    max-width: 300px;
+
+    & .card-img-top{
+      max-height: 75%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    & .card-body{
+      z-index: 1;
+    }
+  }
+
+  & .project {
+    background-color: $lightSecondary;
+    flex: 1;
+    height: 400px;
+    min-width: 300px;
+    transition: 0.5s ease;
+    background-size: cover;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 0px 4px $darkPrimary;
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+
+    & .project-description {
+      font-size: 11px;
+    }
+  }
+
+  & .project:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    box-shadow: none;
+  }
+}
+
+#about-us-div {
+  & p.body-copy {
+    margin: 0px;
+    text-overflow: ellipsis;
+    max-width: 700px;
+    padding-bottom: 20px;
+  }
+}
+
+footer {
+  background-color: $mediumPrimary;
+  & div.wrapper {
+    display: flex;
+    padding-bottom: 50px;
+
+    & .footer-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      & .footer-contact-info {
+        font-size: 16px;
+        color: $lightPrimary;
+      }
+    }
+
+    & #footer-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      & li {
+        padding: 0px 20px;
+        & a {
+          text-decoration: none;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          font-size: 12px;
+          color: $lightPrimary;
+        }
+
+        & a:hover {
+          color: $lightComplementary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  @include mobileStyle;
+}
+
+@media only screen and (min-width: 501px) {
+  @include tabletStyle;
+}
+
+@media only screen and (min-width: 1025px) {
+  @include desktopStyle;
+}

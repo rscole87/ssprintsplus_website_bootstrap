@@ -1,0 +1,54 @@
+@mixin desktopStyle {
+  #intro-section {
+    background-image: url(../images/shirt-model2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 0%;
+
+    & #banner-img-div {
+      padding: 50px 0 0 0;
+
+      & #banner-img {
+        max-width: 450px;
+      }
+    }
+  }
+
+  #about-section {
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    .body-copy {
+      font-size: 20px;
+      line-height: 1.4em;
+    }
+
+    & div.wrapper {
+      & .twoCol {
+        & h3 {
+          font-size: 100px;
+          letter-spacing: 0.1em;
+        }
+      }
+
+      & .accent-text {
+        color: $darkSecondary;
+        font-style: italic;
+      }
+    }
+  }
+
+  #featured-products-section {
+    & #featured-products-div {
+      & .product-thumb {
+        min-width: 500px;
+        min-height: 400px;
+        // margin: 10px;
+        // border-radius: 10px;
+      }
+    }
+  }
+
+  #capabilities-section {
+    padding-bottom: 30px;
+  }
+}
