@@ -36,20 +36,30 @@
     </nav>
 
     <div id="products-page-body">
-      <div class="wrapper">
+      <div class="container">
         <h1 class="page-heading">Products</h1>
       </div>
 
-      <div class="wrapper">
-        <select name="project-filter" id="project-filter">
-          <option value="all" selected>All</option>
-          <option value="shirt">Shirts</option>
-          <option value="sign">Signs</option>
-          <option value="decal">Decals</option>
-        </select>
+      <div class="container">
+        <div class="row">
+          <div class="input-group col-md-4 mb-3">
+            <div class="input-group-prepend">
+              <label for="project-filter" class="input-group-text">Product Type</label>
+            </div>
+
+            <select name="project-filter" id="project-filter" class="custom-select">
+              <option value="all" selected>All</option>
+              <option value="shirt">Shirts</option>
+              <option value="sign">Signs</option>
+              <option value="decal">Decals</option>
+            </select>
+          </div>
+        </div>
       </div>
 
-      <div id="projects-div" class="wrapper"></div>
+      <div class="container">
+        <div id="projects-div" class="row d-flex justify-content-around"></div>
+      </div>
     </div>
 
     <!-- <template id="project-template">
@@ -62,10 +72,10 @@
     </template> -->
 
     <template id="project-card-template">
-      <div project-container class="card mx-auto my-3">
-        <div shirt-img class="product-img-div pt-3">
+      <div project-container class="card m-3 col-12 col-sm-4 col-md-3">
+        <div shirt-img class="product-img-div p-3">
           <div>
-            <img design-img src="" class="card-img-top pt-5 mx-auto d-block" alt="">
+            <img design-img src="" class="card-img-top pt-5 mx-auto d-block" alt="" />
           </div>
         </div>
         <div class="card-body">

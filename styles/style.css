@@ -41,7 +41,7 @@ nav {
 }
 
 nav .logo {
-  max-width: 60px;
+  max-height: 60px;
 }
 
 nav ul {
@@ -382,24 +382,22 @@ select {
 }
 
 #projects-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 1%;
-  border-radius: 15px;
-  background-color: #f1ce95;
+  border-radius: 5px;
+  background-color: #f0efef;
 }
 
 #projects-div .card {
-  min-height: 350px;
-  max-width: 300px;
+  min-height: 300px;
+  min-width: 300px;
+  border: hidden;
+  border-radius: 10px;
 }
 
 #projects-div .card .product-img-div {
   background-repeat: no-repeat;
   background-size: cover;
+  background-origin: content-box;
   min-height: 50%;
 }
 
@@ -414,7 +412,8 @@ select {
 }
 
 #projects-div .card .card-body {
-  z-index: 1;
+  min-height: 50%;
+  overflow: scroll;
 }
 
 #projects-div .project {
