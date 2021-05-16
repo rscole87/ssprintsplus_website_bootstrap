@@ -11,19 +11,22 @@
   }
 
   #intro-section {
-    background-image: url(../images/shirt-model2.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 25% 0%;
-
     & #banner-img-div {
-      padding: 60px 0 0 0;
+      padding: 30px 0 0 0;
+      position: absolute;
+      z-index: 1;
+      
 
       & #banner-img {
-        max-width: 200px;
+        max-width: 125px;
+        border-radius: 20px;
+        background-color: hsla(104, 35%, 67%, 0.76);
         padding: 5%;
+        margin: 0 0 0 5%;
       }
     }
+
+    
   }
 
   #about-section {
