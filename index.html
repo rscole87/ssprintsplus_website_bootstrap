@@ -81,19 +81,12 @@
                   </div>
                 </div>
 
-                <div class="row form-group">
-                  <label for="inlineRadioOptions" class="col-sm-6 col-form-label">Number of Shirts</label>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1-24" />
-                    <label class="form-check-label" for="inlineRadio1">1-24</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="25-49" />
-                    <label class="form-check-label" for="inlineRadio2">25-49</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="50+" />
-                    <label class="form-check-label" for="inlineRadio3">50+</label>
+                <div class="form-group row">
+                  <label for="shirt-count" class="col-sm-6 col-form-label">Number of Shirts</label>
+                  <div id="shirt-count" class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="shirt-count-option" id="front-graphic-selection" value="tent" checked /> 1 - 24 </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="back-graphic-selection" value="rv" /> 25 - 49 </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="both-graphic-selection" value="rv" /> 50+ </label>
                   </div>
                 </div>
 
@@ -107,9 +100,9 @@
                 <div class="form-group row">
                   <label for="graphic-placement" class="col-sm-6 col-form-label">Graphic Placement</label>
                   <div id="graphic-placement" class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-secondary active text-nowrap"> <input type="radio" name="graphic-placement-option" id="front-graphic-selection" value="tent" checked/> Front Side </label>
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-secondary text-nowrap"> <input type="radio" name="graphic-placement-option" id="back-graphic-selection" value="rv" /> Back Side </label>
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-secondary text-nowrap"> <input type="radio" name="graphic-placement-option" id="both-graphic-selection" value="rv" /> Both Front & Back </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="graphic-placement-option" id="front-graphic-selection" value="tent" checked /> Front Side </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="back-graphic-selection" value="rv" /> Back Side </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="both-graphic-selection" value="rv" /> Both Front & Back </label>
                   </div>
                 </div>
 
@@ -182,7 +175,7 @@
         <div class="row">
           <div class="heading-div col">
             <h3 class="heading-medium">Featured Products</h3>
-            <a href="./projects.html" type="button" class="btn btn-primary">See all products ></a>
+            <a href="./products.html" type="button" class="btn btn-primary">See all products ></a>
           </div>
         </div>
       </div>
@@ -212,29 +205,110 @@
     </section>
 
     <section id="capabilities-section">
-      <div class="wrapper">
-        <div class="heading-div">
+      <div class="container">
+        <div class="heading-div row">
           <h3 class="heading-medium">Services Offered</h3>
         </div>
 
-        <div id="capabilities-div">
-          <div class="capability-item">
+        <div id="capabilities-div" class="row">
+          <div class="capability-item col">
             <h3 class="capability-heading">T-Shirt Press</h3>
           </div>
 
-          <div class="capability-item center-item">
+          <div class="capability-item center-item col">
             <h3 class="capability-heading">Transfers & Vinyl</h3>
           </div>
 
-          <div class="capability-item">
+          <div class="capability-item col">
             <h3 class="capability-heading">Simple Signs & Designs</h3>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="pricing-section">
+      <div class="container">
+        <div class="heading-div row">
+          <h3 class="heading-medium">Pricing</h3>
+        </div>
+
+        <div class="row">
+          
+          <div class="table-responsive">
+            <div>
+              <h2 class="text-center">Pricing Guide Per Shirt</h2>
+            </div>
+            
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Basic Printing*</th>
+                  <th>Vinyl</th>
+                  <th>Youth - XL</th>
+                  <th>2XL</th>
+                  <th>3XL</th>
+                  <th>4XL</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th>One Side</th>
+                  <td>1 Solid Color</td>
+                  <td>$20.00</td>
+                  <td>$22.00</td>
+                  <td>$23.00</td>
+                  <td>$24.00</td>
+                </tr>
+
+                <tr>
+                  <th>Front and Back</th>
+                  <td>1 Solid Color</td>
+                  <td>$25.00</td>
+                  <td>$27.00</td>
+                  <td>$28.00</td>
+                  <td>$29.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="table-responsive">
+            <div>
+              <h2 class="text-center">Quantity Pricing Guide</h2>
+            </div>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Shirts & Vinyl</th>
+                  <th>Shirt Quantity</th>
+                  <th>Youth - XL</th>
+                  <th>2XL</th>
+                  <th>3XL</th>
+                  <th>4XL</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th>One Side One Color</th>
+                  <td>25 - 50</td>
+                  <td>$15.00</td>
+                  <td>$17.00</td>
+                  <td>$18.00</td>
+                  <td>$19.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact-section">
-      <div class="wrapper">
+      <div class="container">
         <div class="heading-div">
           <h3 class="heading-medium">Contact</h3>
         </div>
@@ -245,7 +319,7 @@
     </section>
 
     <footer>
-      <div class="wrapper">
+      <div class="container">
         <div class="footer-col">
           <span class="footer-contact-info">S&S Prints-Plus, LLC</span>
           <span class="footer-contact-info">ssprintsplus@gmail.com</span>

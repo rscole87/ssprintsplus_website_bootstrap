@@ -73,6 +73,7 @@ nav {
 
 .heading-medium {
   @include heading();
+  font-size: 3em;
 }
 
 .page-heading {
@@ -202,6 +203,17 @@ nav {
       border-right: 1.5px solid $mediumPrimary;
     }
   }
+}
+
+#pricing-section{
+  .heading-medium{
+    padding: 50px 0 0 0;
+  }
+
+  h2{
+    padding: 30px 0 0 0;
+  }
+  padding-bottom: 5%;
 }
 
 #contact-section {
