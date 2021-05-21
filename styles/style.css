@@ -7,6 +7,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 h1,
@@ -30,45 +31,12 @@ h6 {
   max-width: 1400px;
 }
 
-.heading-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 nav {
   background-color: #4d774e;
-  max-height: 100%;
 }
 
 nav .logo {
   max-height: 45px;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 nav ul li {
@@ -80,13 +48,8 @@ nav ul li a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 12px;
-  color: #9dc88d;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: #f1b24a;
 }
 
 .heading-medium {
@@ -100,29 +63,21 @@ nav ul li a:hover {
   font-size: 3em;
 }
 
-.page-heading {
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  padding: 50px 0px;
-  margin: 0;
-  font-family: "Bebas Neue", cursive;
-  font-weight: 800;
-}
-
 .bold-weight {
   font-weight: 800;
 }
 
-#order-request-modal h3 {
+#order-request-modal .modal-header {
+  background-color: #9dc88d;
+}
+
+#order-request-modal .modal-header h3 {
   padding: 0;
 }
 
 #intro-section {
   min-height: 20vh;
   max-height: 70vh;
-  background-color: #9dc88d;
   overflow: hidden;
 }
 
@@ -132,37 +87,16 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
-#about-section button {
-  cursor: pointer;
-  text-transform: uppercase;
-  max-height: 40px;
-  font-size: 0.75em;
-  font-weight: 400;
-  color: #d69326;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  padding: 10px 20px;
-  min-width: 50px;
-  border: none;
-  background-color: white;
-  color: #d69326;
-  margin-right: auto;
-}
-
-#about-section button:hover {
-  color: #ffffff;
-  background-color: #9dc88d;
-}
-
 #about-section .body-copy {
   margin: 0;
+  font-size: 1rem;
 }
 
 #about-section h1 {
   margin: 0;
   padding: 0;
   color: #9dc88d;
-  font-size: 6em;
+  font-size: 6rem;
 }
 
 #about-section span.accent-text {
@@ -283,18 +217,6 @@ nav ul li a:hover {
   border-right: 1.5px solid #4d774e;
 }
 
-#pricing-section {
-  padding-bottom: 5%;
-}
-
-#pricing-section .heading-medium {
-  padding: 50px 0 0 0;
-}
-
-#pricing-section h2 {
-  padding: 50px 0 0 0;
-}
-
 #contact-section {
   min-height: 50vh;
   background-color: #4d774e;
@@ -311,187 +233,56 @@ nav ul li a:hover {
   max-width: 700px;
 }
 
-#contact-section ::-webkit-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  color: #164a41;
-}
-
-#contact-section :-ms-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  color: #164a41;
-}
-
-#contact-section ::-ms-input-placeholder {
-  font-family: "Roboto", sans-serif;
-  color: #164a41;
-}
-
-#contact-section ::placeholder {
-  font-family: "Roboto", sans-serif;
-  color: #164a41;
-}
-
-#contact-section #form-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#contact-section #form-div #contact-form {
-  width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#contact-section #form-div #contact-form input[type="text"] {
-  background: #9dc88d;
-  border: none;
-  padding: 10px 10px;
-  margin: 10px;
-  min-width: 40%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-#contact-section #form-div #contact-form input[type="text"]:focus {
-  outline: none;
-}
-
-#contact-section #form-div #contact-form textarea {
-  background: #9dc88d;
-  border: none;
-  padding: 10px 10px;
-  margin: 10px;
-  width: 100%;
-}
-
-#contact-section #form-div #contact-form textarea:focus {
-  outline: none;
-}
-
-#contact-section #form-div #contact-form #submit-bttn-div {
-  margin: 0 auto;
-}
-
-#contact-section #form-div #contact-form #submit {
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: white;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  padding: 10px 20px;
-  width: 100%;
-  border: 1px solid #9dc88d;
-  background-color: transparent;
-}
-
-#contact-section #form-div #contact-form #submit:hover {
-  background: #f1b24a;
-}
-
-select {
-  margin-bottom: 30px;
-}
-
 #products-page-body {
   background-color: #f1b24a;
 }
 
-#projects-div {
+#products-div {
   padding: 1%;
   border-radius: 5px;
   background-color: #f0efef;
 }
 
-#projects-div .card {
+#products-div .card {
   min-height: 300px;
   min-width: 300px;
   border: hidden;
   border-radius: 10px;
 }
 
-#projects-div .card .product-img-div {
+#products-div .card .product-img-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
   min-height: 50%;
 }
 
-#projects-div .card .product-img-div img {
+#products-div .card .product-img-div img {
   max-width: 40%;
 }
 
-#projects-div .card .card-img-top {
+#products-div .card .card-img-top {
   max-height: 75%;
   width: 100%;
   overflow: hidden;
 }
 
-#projects-div .card .card-body {
+#products-div .card .card-body {
   min-height: 50%;
-  overflow: scroll;
-}
-
-#projects-div .project {
-  background-color: #f1ce95;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 400px;
-  min-width: 300px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-size: cover;
-  margin: 1%;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 4px #164a41;
-          box-shadow: 0px 4px #164a41;
-}
-
-#projects-div .project img {
-  height: 100%;
-  width: 100%;
-}
-
-#projects-div .project .project-description {
-  font-size: 11px;
-}
-
-#projects-div .project:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#about-us-div p.body-copy {
-  margin: 0px;
-  text-overflow: ellipsis;
-  max-width: 700px;
-  padding-bottom: 20px;
 }
 
 footer {
   background-color: #4d774e;
 }
 
-footer div.wrapper {
+footer div.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 50px;
 }
 
-footer div.wrapper .footer-col {
+footer div.container .footer-col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -504,22 +295,22 @@ footer div.wrapper .footer-col {
           flex-direction: column;
 }
 
-footer div.wrapper .footer-col .footer-contact-info {
+footer div.container .footer-col .footer-contact-info {
   font-size: 16px;
   color: #9dc88d;
 }
 
-footer div.wrapper #footer-menu {
+footer div.container #footer-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-footer div.wrapper #footer-menu li {
+footer div.container #footer-menu li {
   padding: 0px 20px;
 }
 
-footer div.wrapper #footer-menu li a {
+footer div.container #footer-menu li a {
   text-decoration: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -527,11 +318,11 @@ footer div.wrapper #footer-menu li a {
   color: #9dc88d;
 }
 
-footer div.wrapper #footer-menu li a:hover {
+footer div.container #footer-menu li a:hover {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 575px) {
   .wrapper {
     margin: 0 auto;
     width: 85%;
@@ -639,7 +430,7 @@ footer div.wrapper #footer-menu li a:hover {
   }
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 576px) {
   #intro-section #banner-img-div {
     padding: 70px 0 0 0;
     position: absolute;
@@ -696,7 +487,6 @@ footer div.wrapper #footer-menu li a:hover {
     margin: 0 0 0 0;
   }
   #about-section .body-copy {
-    font-size: 20px;
     line-height: 1.4em;
   }
   #about-section div.wrapper .twoCol h3 {
