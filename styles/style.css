@@ -149,21 +149,6 @@ nav ul li a {
   color: #ffffff;
 }
 
-#featured-products-section button {
-  cursor: pointer;
-  text-transform: uppercase;
-  max-height: 40px;
-  font-size: 0.75em;
-  font-weight: 400;
-  color: #d69326;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  padding: 10px 20px;
-  min-width: 50px;
-  border: none;
-  background-color: white;
-}
-
 #featured-products-section button:hover {
   color: #ffffff;
   background-color: #9dc88d;
@@ -215,6 +200,14 @@ nav ul li a {
 #capabilities-section #capabilities-div .center-item {
   border-left: 1.5px solid #4d774e;
   border-right: 1.5px solid #4d774e;
+}
+
+#pricing-section .heading-medium {
+  color: #4d774e;
+}
+
+#pricing-section h2 {
+  color: #9dc88d;
 }
 
 #contact-section {
