@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "./variables";
 @import "./mixins";
-@import "./mobile";
-@import "./tablet";
-@import "./desktop";
 
 body {
   margin: 0px;
@@ -34,14 +31,14 @@ h6 {
 nav {
   background-color: $mediumPrimary;
 
-  & .logo {
+  .logo {
     max-height: 45px;
   }
 
-  & ul {
-    & li {
+  ul {
+    li {
       padding: 0px 20px;
-      & a {
+      a {
         text-decoration: none;
         letter-spacing: 0.1em;
         text-transform: uppercase;
@@ -75,6 +72,22 @@ nav {
   min-height: 20vh;
   max-height: 70vh;
   overflow: hidden;
+
+  & #banner-img-div {
+    position: absolute;
+    z-index: 1;
+
+    & #banner-img {
+      max-width: 25%;
+      border-radius: 15px;
+      background-color: hsla(104, 35%, 67%, 0.76);
+      margin: 0 0 0 0;
+
+      @media screen and (min-width: 1200px) {
+        max-width: 375px;
+      }
+    }
+  }
 }
 
 #about-section {
@@ -87,14 +100,21 @@ nav {
     font-size: 1rem;
   }
 
-  & h1 {
+  h1 {
     margin: 0;
     padding: 0;
     color: $lightPrimary;
-    font-size: 6rem;
+    font-size: 8vw;
+
+    @media screen and (max-width: 575px) {
+      font-size: 15vw;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 95px;
+    }
   }
 
-  & span.accent-text {
+  span.accent-text {
     color: $lightSecondary;
     font-style: italic;
   }
@@ -110,25 +130,25 @@ nav {
     overflow: hidden;
   }
 
-  & .heading-medium {
+  .heading-medium {
     color: $lightComplementary;
   }
 
-  & button {
+  button {
     @include bttnStyle();
   }
 
-  & button:hover {
+  button:hover {
     color: $lightComplementary;
     background-color: $lightPrimary;
   }
 
-  & #featured-products-div {
+  #featured-products-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    & .product-thumb {
+    .product-thumb {
       flex-grow: 1;
       background-color: $lightPrimary;
       background-size: 100%;
@@ -144,31 +164,21 @@ nav {
 }
 
 #capabilities-section {
-  min-height: 25vh;
+  min-height: 30vh;
   background-color: $lightPrimary;
-  padding-bottom: 50px;
 
-  & #capabilities-div {
-    display: flex;
-    flex-wrap: wrap;
-
-    & .capability-heading {
-      @include pageHeading();
+  #capabilities-div {
+    .capability-heading {
       padding: 0;
-      font-size: 20px;
+      font-size: 1.5rem;
       color: $mediumPrimary;
     }
 
-    & .capability-item {
-      flex: 1;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: center;
+    .capability-item {
       padding: 10px;
     }
 
-    & .center-item {
+    .center-item {
       border-left: 1.5px solid $mediumPrimary;
       border-right: 1.5px solid $mediumPrimary;
     }
@@ -176,15 +186,15 @@ nav {
 }
 
 #contact-section {
-  min-height: 50vh;
+  min-height: 30vh;
   background-color: $mediumPrimary;
   padding-bottom: 30px;
 
-  & .heading-medium {
+  .heading-medium {
     color: $lightComplementary;
   }
 
-  & .body-copy {
+  .body-copy {
     color: $lightComplementary;
     font-weight: 100;
     max-width: 700px;
@@ -206,24 +216,24 @@ nav {
     border: hidden;
     border-radius: 10px;
 
-    & .product-img-div {
+    .product-img-div {
       background-repeat: no-repeat;
       background-size: cover;
       background-origin: content-box;
       min-height: 50%;
 
-      & img {
+      img {
         max-width: 40%;
       }
     }
 
-    & .card-img-top {
+    .card-img-top {
       max-height: 75%;
       width: 100%;
       overflow: hidden;
     }
 
-    & .card-body {
+    .card-body {
       min-height: 50%;
     }
   }
@@ -231,29 +241,29 @@ nav {
 
 footer {
   background-color: $mediumPrimary;
-  & div.container {
+  div.container {
     display: flex;
     padding-bottom: 50px;
 
-    & .footer-col {
+    .footer-col {
       flex: 1;
       display: flex;
       flex-direction: column;
 
-      & .footer-contact-info {
+      .footer-contact-info {
         font-size: 16px;
         color: $lightPrimary;
       }
     }
 
-    & #footer-menu {
+    #footer-menu {
       list-style: none;
       margin: 0;
       padding: 0;
 
-      & li {
+      li {
         padding: 0px 20px;
-        & a {
+        a {
           text-decoration: none;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -261,22 +271,10 @@ footer {
           color: $lightPrimary;
         }
 
-        & a:hover {
+        a:hover {
           color: $lightComplementary;
         }
       }
     }
   }
-}
-
-@media only screen and (max-width: 575px) {
-  @include mobileStyle;
-}
-
-@media only screen and (min-width: 576px) {
-  @include tabletStyle;
-}
-
-@media only screen and (min-width: 1025px) {
-  @include desktopStyle;
 }

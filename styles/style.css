@@ -81,6 +81,24 @@ nav ul li a {
   overflow: hidden;
 }
 
+#intro-section #banner-img-div {
+  position: absolute;
+  z-index: 1;
+}
+
+#intro-section #banner-img-div #banner-img {
+  max-width: 25%;
+  border-radius: 15px;
+  background-color: rgba(157, 200, 141, 0.76);
+  margin: 0 0 0 0;
+}
+
+@media screen and (min-width: 1200px) {
+  #intro-section #banner-img-div #banner-img {
+    max-width: 375px;
+  }
+}
+
 #about-section {
   min-height: 50vh;
   padding: 30px 0px;
@@ -96,7 +114,19 @@ nav ul li a {
   margin: 0;
   padding: 0;
   color: #9dc88d;
-  font-size: 6rem;
+  font-size: 8vw;
+}
+
+@media screen and (max-width: 575px) {
+  #about-section h1 {
+    font-size: 15vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about-section h1 {
+    font-size: 95px;
+  }
 }
 
 #about-section span.accent-text {
@@ -168,47 +198,17 @@ nav ul li a {
 }
 
 #capabilities-section {
-  min-height: 25vh;
+  min-height: 30vh;
   background-color: #9dc88d;
-  padding-bottom: 50px;
-}
-
-#capabilities-section #capabilities-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #capabilities-section #capabilities-div .capability-heading {
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  padding: 50px 0px;
-  margin: 0;
-  font-family: "Bebas Neue", cursive;
-  font-weight: 800;
   padding: 0;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #4d774e;
 }
 
 #capabilities-section #capabilities-div .capability-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
   padding: 10px;
 }
 
@@ -218,7 +218,7 @@ nav ul li a {
 }
 
 #contact-section {
-  min-height: 50vh;
+  min-height: 30vh;
   background-color: #4d774e;
   padding-bottom: 30px;
 }
@@ -320,189 +320,5 @@ footer div.container #footer-menu li a {
 
 footer div.container #footer-menu li a:hover {
   color: #ffffff;
-}
-
-@media only screen and (max-width: 575px) {
-  .wrapper {
-    margin: 0 auto;
-    width: 85%;
-  }
-  .heading-medium {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    padding: 50px 0px;
-    margin: 0;
-    font-family: "Bebas Neue", cursive;
-    padding: 30px 0px;
-    font-size: 20px;
-  }
-  #intro-section #banner-img-div {
-    padding: 30px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #intro-section #banner-img-div #banner-img {
-    max-width: 125px;
-    border-radius: 20px;
-    background-color: rgba(157, 200, 141, 0.76);
-    padding: 5%;
-    margin: 0 0 0 5%;
-  }
-  #about-section {
-    padding: 15px 0px;
-  }
-  #about-section .body-copy {
-    font-size: 16px;
-    line-height: 1.5em;
-  }
-  #about-section div.wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #about-section div.wrapper .twoCol h3 {
-    font-size: 40px;
-    padding-top: 20px;
-  }
-  #about-section div.wrapper .accent-text {
-    font-size: 14px;
-  }
-  #featured-products-section button {
-    font-size: 0.5em;
-  }
-  #featured-products-section #featured-products-div .product-thumb {
-    min-width: unset;
-    width: 50%;
-    height: 150px;
-  }
-  #capabilities-section {
-    padding-bottom: 15px;
-  }
-  #capabilities-section #capabilities-div {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #capabilities-section #capabilities-div .capability-heading {
-    font-size: 12px;
-  }
-  #contact-section #form-div #contact-form {
-    width: 100%;
-  }
-  #about-us-div {
-    padding-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #about-us-div .twoCol {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-  }
-  #about-us-div #headshot-div {
-    min-height: 200px;
-  }
-  #projects-div .project {
-    height: 350px;
-    min-width: 200px;
-    padding-bottom: 1%;
-  }
-  footer div.wrapper {
-    padding-bottom: 30px;
-  }
-  footer div.wrapper .footer-col .footer-contact-info {
-    font-size: 12px;
-    color: #9dc88d;
-  }
-  footer div.wrapper #footer-menu li {
-    padding: 0px 20px;
-    line-height: 0.7em;
-  }
-  footer div.wrapper #footer-menu li a {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  #intro-section #banner-img-div {
-    padding: 70px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #intro-section #banner-img-div #banner-img {
-    max-width: 200px;
-    border-radius: 20px;
-    background-color: rgba(157, 200, 141, 0.76);
-    padding: 3%;
-    margin: 0 0 0 0%;
-  }
-  #about-section .body-copy {
-    font-size: 18px;
-  }
-  #about-section div.wrapper .twoCol h3 {
-    font-size: 70px;
-  }
-  #featured-products-section {
-    min-height: 50vh;
-  }
-  #featured-products-section #featured-products-div .product-thumb {
-    min-width: 350px;
-    min-height: 300px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  #capabilities-section {
-    padding-bottom: 0px;
-  }
-  #capabilities-section .capability-heading {
-    font-size: 12px;
-  }
-  #contact-section {
-    min-height: 30vh;
-  }
-  #contact-section #form-div #contact-form {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  #intro-section #banner-img-div {
-    padding: 50px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #intro-section #banner-img-div #banner-img {
-    max-width: 350px;
-    border-radius: 20px;
-    background-color: rgba(157, 200, 141, 0.76);
-    padding: 3%;
-    margin: 0 0 0 0;
-  }
-  #about-section .body-copy {
-    line-height: 1.4em;
-  }
-  #about-section div.wrapper .twoCol h3 {
-    font-size: 100px;
-    letter-spacing: 0.1em;
-  }
-  #about-section div.wrapper .accent-text {
-    color: #d69326;
-    font-style: italic;
-  }
-  #featured-products-section #featured-products-div .product-thumb {
-    min-width: 500px;
-    min-height: 400px;
-  }
-  #capabilities-section {
-    padding-bottom: 30px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
