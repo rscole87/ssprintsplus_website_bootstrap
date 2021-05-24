@@ -63,10 +63,6 @@ nav ul li a {
   font-size: 3em;
 }
 
-.bold-weight {
-  font-weight: 800;
-}
-
 #order-request-modal .modal-header {
   background-color: #9dc88d;
 }
@@ -275,35 +271,28 @@ footer div.container {
   padding-bottom: 50px;
 }
 
-footer div.container .footer-col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+footer div.container ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-footer div.container .footer-col .footer-contact-info {
-  font-size: 16px;
+footer div.container ul li {
   color: #9dc88d;
 }
 
-footer div.container #footer-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+footer div.container ul .bold-weight {
+  font-weight: 800;
 }
 
-footer div.container #footer-menu li {
+footer div.container ul .footer-contact-info {
+  font-size: 16px;
+}
+
+footer div.container #footer-nav li {
   padding: 0px 20px;
 }
 
-footer div.container #footer-menu li a {
+footer div.container #footer-nav li a {
   text-decoration: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -311,7 +300,7 @@ footer div.container #footer-menu li a {
   color: #9dc88d;
 }
 
-footer div.container #footer-menu li a:hover {
+footer div.container #footer-nav li a:hover {
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
