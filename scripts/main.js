@@ -35,8 +35,14 @@ const randomColor = () =>{
 const printProject = (project) => {
   let projectClone = document.importNode(cardTemplate.content, true)
   projectClone.querySelector("[project-container]").id = project.id
-  projectClone.querySelector("[design-img]").src = `${project.image}`
-  projectClone.querySelector("[shirt-img]").style.backgroundImage = `url(${shirts[0].colors[randomColor()]})`
+  let shirtColor = randomColor();
+
+  if (shirtColor === "white" || shirtColor === "yellow"){
+    projectClone.querySelector("[design-img]").src = `${project.imageDark}`
+  } else {
+    projectClone.querySelector("[design-img]").src = `${project.imageLight}`
+  }
+  projectClone.querySelector("[shirt-img]").style.backgroundImage = `url(${shirts[0].colors[shirtColor]})`
   projectClone.querySelector("[project-title]").innerHTML = project.name
   // projectClone.querySelector("[project-description]").innerHTML = project.description
   return projectClone
