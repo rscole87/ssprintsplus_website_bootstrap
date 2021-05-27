@@ -50,6 +50,26 @@ const printProject = (project) => {
 
 filterProjects("all")
 
+const focusProject = (project) => {
+  if (project.style.height === "400px" || project.style.transform !== "scale(1.75)") {
+    // project.style.height = "550px"
+    project.style.webkitTransform = "scale(1.75)"
+    project.style.MozTransform = "scale(1.75)"
+    project.style.msTransform = "scale(1.75)"
+    project.style.OTransform = "scale(1.75)"
+    project.style.transform = "scale(1.75)"
+    // project.style.width = "550px"
+  } else {
+    // project.style.height = "400px"
+    project.style.webkitTransform = "scale(1)"
+    project.style.MozTransform = "scale(1)"
+    project.style.msTransform = "scale(1)"
+    project.style.OTransform = "scale(1)"
+    project.style.transform = "scale(1)"
+    // project.style.width = "300px"
+  }
+}
+
 let projectSamples = Array.from(document.getElementsByClassName("project"))
 
 projectSamples.forEach((project) => {
@@ -57,3 +77,5 @@ projectSamples.forEach((project) => {
     focusProject(project)
   })
 })
+
+

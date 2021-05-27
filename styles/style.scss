@@ -121,11 +121,6 @@ nav {
   background-color: $mediumSecondary;
   padding-bottom: 30px;
 
-  #featured-products-carousel {
-    height: 50vh;
-    overflow: hidden;
-  }
-
   .heading-medium {
     color: $lightComplementary;
   }
@@ -140,15 +135,9 @@ nav {
   }
 
   #featured-products-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
     .product-thumb {
-      flex-grow: 1;
-      background-color: $lightPrimary;
-      background-size: 100%;
-      background-repeat: no-repeat;
+      max-width: 100%;
+      border-radius: 10px;
       transition: 0.5s;
     }
 
