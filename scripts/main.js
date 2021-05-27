@@ -3,7 +3,20 @@ import shirts from "./shirts.js"
 let cardTemplate = document.getElementById("project-card-template")
 const projectFilter = document.getElementById("project-filter")
 const productsDiv = document.getElementById("products-div")
+const activeImage = document.getElementById("active-image")
 
+const focusProject = (product) => {
+  activeImage.src = product.src
+}
+
+let productThumbLinks = Array.from(document.getElementsByClassName("product-thumb-link"))
+
+productThumbLinks.forEach((anchor) => {
+  let productImg = anchor.childNodes[1]
+  anchor.addEventListener("click", () => {
+    focusProject(productImg)
+  })
+})
 
 const filterProjects = (type) => {
   console.log("filtering")
@@ -26,18 +39,18 @@ projectFilter.addEventListener("change", () => {
   filterProjects(projectFilter.value)
 })
 
-const randomColor = () =>{
-  const shirtColors = ['white', 'black', 'blue', 'charcoal', 'gray', 'green', 'hunter', 'navy', 'orange', 'purple', 'red', 'yellow'];
-  let chosenColor = shirtColors[Math.floor(Math.random() * shirtColors.length)];
+const randomColor = () => {
+  const shirtColors = ["white", "black", "blue", "charcoal", "gray", "green", "hunter", "navy", "orange", "purple", "red", "yellow"]
+  let chosenColor = shirtColors[Math.floor(Math.random() * shirtColors.length)]
   return chosenColor
 }
 
 const printProject = (project) => {
   let projectClone = document.importNode(cardTemplate.content, true)
   projectClone.querySelector("[project-container]").id = project.id
-  let shirtColor = randomColor();
+  let shirtColor = randomColor()
 
-  if (shirtColor === "white" || shirtColor === "yellow"){
+  if (shirtColor === "white" || shirtColor === "yellow") {
     projectClone.querySelector("[design-img]").src = `${project.imageDark}`
   } else {
     projectClone.querySelector("[design-img]").src = `${project.imageLight}`
@@ -49,33 +62,3 @@ const printProject = (project) => {
 }
 
 filterProjects("all")
-
-const focusProject = (project) => {
-  if (project.style.height === "400px" || project.style.transform !== "scale(1.75)") {
-    // project.style.height = "550px"
-    project.style.webkitTransform = "scale(1.75)"
-    project.style.MozTransform = "scale(1.75)"
-    project.style.msTransform = "scale(1.75)"
-    project.style.OTransform = "scale(1.75)"
-    project.style.transform = "scale(1.75)"
-    // project.style.width = "550px"
-  } else {
-    // project.style.height = "400px"
-    project.style.webkitTransform = "scale(1)"
-    project.style.MozTransform = "scale(1)"
-    project.style.msTransform = "scale(1)"
-    project.style.OTransform = "scale(1)"
-    project.style.transform = "scale(1)"
-    // project.style.width = "300px"
-  }
-}
-
-let projectSamples = Array.from(document.getElementsByClassName("project"))
-
-projectSamples.forEach((project) => {
-  project.addEventListener("click", () => {
-    focusProject(project)
-  })
-})
-
-

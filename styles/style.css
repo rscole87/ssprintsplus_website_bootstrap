@@ -147,15 +147,20 @@ nav ul li a {
 
 #featured-products-section #featured-products-div .product-thumb {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: 2px solid white;
 }
 
 #featured-products-section #featured-products-div .product-thumb:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+#featured-products-section #feature-modal img {
+  width: 100%;
 }
 
 #capabilities-section {

@@ -135,10 +135,12 @@ nav {
   }
 
   #featured-products-div {
+   
     .product-thumb {
       max-width: 100%;
-      border-radius: 10px;
+      border-radius: 5px;
       transition: 0.5s;
+      border: 2px solid white;
     }
 
     .product-thumb:hover {
@@ -146,6 +148,13 @@ nav {
       transform: scale(1.05);
     }
   }
+
+  #feature-modal{
+    img{
+      width: 100%;
+    }
+  }
+
 }
 
 #capabilities-section {
@@ -235,7 +244,7 @@ nav {
       height: 20%;
       border: 3px solid $mediumPrimary;
       border-radius: 50px;
-      background-color: $mediumPrimary
+      background-color: $mediumPrimary;
     }
 
     .card-title {
@@ -249,7 +258,7 @@ nav {
   .card:hover {
     box-shadow: 2px 2px 10px 2px #0000000e;
     cursor: pointer;
-    transform: scale(1.10);
+    transform: scale(1.1);
   }
 }
 
