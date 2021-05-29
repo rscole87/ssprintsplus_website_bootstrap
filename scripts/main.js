@@ -4,6 +4,7 @@ const cardTemplate = document.getElementById("project-card-template")
 const projectFilter = document.getElementById("project-filter")
 const productsDiv = document.getElementById("products-div")
 const activeImage = document.getElementById("active-image")
+const featureModalInner = document.getElementById("feature-modal-inner")
 
 const projects = [
   {
@@ -209,7 +210,23 @@ productThumbLinks.forEach(function (anchor) {
   })
 })
 
+// const toggleVisability = function (image) {
+//   const activeClasses = Array.from(image.classList)
+//   if (!activeClasses.includes("hidden")) {
+//     image.classList.add("hidden")
+//   }
+// }
+
 function focusProject(product) {
+  // const images = Array.from(featureModalInner.getElementsByTagName("img"))
+  // console.log(images)
+  // images.forEach(function (image) {
+  //   if (image.src === product.src) {
+  //     image.classList.remove("hidden")
+  //   } else {
+  //     toggleVisability(image)
+  //   }
+  // }) 
   activeImage.src = product.src
 }
 

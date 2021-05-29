@@ -123,6 +123,8 @@ nav {
   #featured-products-section #featured-products-div .product-thumb:hover {
     cursor: pointer;
     transform: scale(1.02); }
+  #featured-products-section #feature-modal .hidden {
+    display: none; }
   #featured-products-section #feature-modal img {
     width: 100%; }
 
