@@ -184,6 +184,9 @@ nav {
     cursor: pointer;
     transform: scale(1.1); }
 
+.contact-link {
+  color: #9dc88d; }
+
 footer {
   background-color: #4d774e; }
   footer div.container {
