@@ -115,8 +115,8 @@ const projects = [
     name: "God Says I Am",
     id: "project15",
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/sample_15.jpg",
-    imageDark: "../images/designs/sample_15.jpg",
+    imageLight: "../images/designs/god-says-WHITE.png",
+    imageDark: "../images/designs/god-says-BLACK.png",
     type: "shirt",
   },
   {
@@ -128,11 +128,11 @@ const projects = [
     type: "shirt",
   },
   {
-    name: "project 17",
+    name: "Get Involved",
     id: "project17",
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/sample_17.jpg",
-    imageDark: "../images/designs/sample_17.jpg",
+    imageLight: "../images/designs/get-involved-WHITE.png",
+    imageDark: "../images/designs/get-involved-BLACK.png",
     type: "shirt",
   },
   {
@@ -141,6 +141,22 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     imageLight: "../images/designs/when-you-cant-WHITE.png",
     imageDark: "../images/designs/when-you-cant-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Tackle Racism",
+    id: "project19",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/tackle-racism-WHITE.png",
+    imageDark: "../images/designs/tackle-racism-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Vote",
+    id: "project20",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/vote-WHITE.png",
+    imageDark: "../images/designs/vote-BLACK.png",
     type: "shirt",
   },
 ]

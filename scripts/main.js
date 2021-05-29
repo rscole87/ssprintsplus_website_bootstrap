@@ -122,8 +122,8 @@ const projects = [
     name: "God Says I Am",
     id: "project15",
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/sample_15.jpg",
-    imageDark: "../images/designs/sample_15.jpg",
+    imageLight: "../images/designs/god-says-WHITE.png",
+    imageDark: "../images/designs/god-says-BLACK.png",
     type: "shirt",
   },
   {
@@ -135,11 +135,11 @@ const projects = [
     type: "shirt",
   },
   {
-    name: "project 17",
+    name: "Get Involved",
     id: "project17",
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/sample_17.jpg",
-    imageDark: "../images/designs/sample_17.jpg",
+    imageLight: "../images/designs/get-involved-WHITE.png",
+    imageDark: "../images/designs/get-involved-BLACK.png",
     type: "shirt",
   },
   {
@@ -150,42 +150,55 @@ const projects = [
     imageDark: "../images/designs/when-you-cant-BLACK.png",
     type: "shirt",
   },
+  {
+    name: "Tackle Racism",
+    id: "project19",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/tackle-racism-WHITE.png",
+    imageDark: "../images/designs/tackle-racism-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Vote",
+    id: "project20",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/vote-WHITE.png",
+    imageDark: "../images/designs/vote-BLACK.png",
+    type: "shirt",
+  },
 ]
-
 
 const shirts = [
   {
     shirtType: "tee",
     colors: {
       white: "../images/mockup-shirt-WHITE.png",
-      black:"../images/mockup-shirt-BLACK.png",
-      blue:"../images/mockup-shirt-BLUE.png",
-      charcoal:"../images/mockup-shirt-CHARCOAL.png",
-      gray:"../images/mockup-shirt-GRAY.png",
-      green:"../images/mockup-shirt-GREEN.png",
-      hunter:"../images/mockup-shirt-HUNTER.png",
-      navy:"../images/mockup-shirt-NAVY.png",
-      orange:"../images/mockup-shirt-ORANGE.png",
-      purple:"../images/mockup-shirt-PURPLE.png",
-      red:"../images/mockup-shirt-RED.png",
-      yellow:"../images/mockup-shirt-YELLOW.png"
-    }, 
+      black: "../images/mockup-shirt-BLACK.png",
+      blue: "../images/mockup-shirt-BLUE.png",
+      charcoal: "../images/mockup-shirt-CHARCOAL.png",
+      gray: "../images/mockup-shirt-GRAY.png",
+      green: "../images/mockup-shirt-GREEN.png",
+      hunter: "../images/mockup-shirt-HUNTER.png",
+      navy: "../images/mockup-shirt-NAVY.png",
+      orange: "../images/mockup-shirt-ORANGE.png",
+      purple: "../images/mockup-shirt-PURPLE.png",
+      red: "../images/mockup-shirt-RED.png",
+      yellow: "../images/mockup-shirt-YELLOW.png",
+    },
   },
   {
     shirtType: "vNeck",
-    svg: ""
+    svg: "",
   },
   {
     shirtType: "polo",
-    svg: ""
+    svg: "",
   },
   {
     shirtType: "tee",
-    svg: ""
-  }
+    svg: "",
+  },
 ]
-
-
 
 const productThumbLinks = Array.from(document.getElementsByClassName("product-thumb-link"))
 
@@ -196,7 +209,7 @@ productThumbLinks.forEach(function (anchor) {
   })
 })
 
-const focusProject = function (product) {
+function focusProject(product) {
   activeImage.src = product.src
 }
 
