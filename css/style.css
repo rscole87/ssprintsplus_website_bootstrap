@@ -50,6 +50,22 @@ nav {
   font-family: "Bebas Neue", cursive;
   font-size: 3em; }
 
+.my-bttn {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: #4d774e;
+  transition-duration: 0.5s;
+  padding: 10px 20px;
+  border-radius: 20px; }
+  .my-bttn:hover {
+    color: #ffffff;
+    background-color: #9dc88d;
+    border-radius: 0px;
+    text-decoration: none; }
+
 #order-request-modal .modal-header {
   background-color: #9dc88d; }
   #order-request-modal .modal-header h3 {
@@ -99,9 +115,6 @@ nav {
   padding-bottom: 30px; }
   #featured-products-section .heading-medium {
     color: #ffffff; }
-  #featured-products-section button:hover {
-    color: #ffffff;
-    background-color: #9dc88d; }
   #featured-products-section #featured-products-div .product-thumb {
     max-width: 100%;
     border-radius: 5px;

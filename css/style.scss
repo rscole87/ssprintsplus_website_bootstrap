@@ -54,6 +54,10 @@ nav {
   font-size: 3em;
 }
 
+.my-bttn {
+  @include bttnStyle();
+}
+
 #order-request-modal {
   .modal-header {
     background-color: $lightPrimary;
@@ -125,17 +129,7 @@ nav {
     color: $lightComplementary;
   }
 
-  button {
-    @include bttnStyle();
-  }
-
-  button:hover {
-    color: $lightComplementary;
-    background-color: $lightPrimary;
-  }
-
   #featured-products-div {
-   
     .product-thumb {
       max-width: 100%;
       border-radius: 5px;
@@ -149,12 +143,11 @@ nav {
     }
   }
 
-  #feature-modal{
-    img{
+  #feature-modal {
+    img {
       width: 100%;
     }
   }
-
 }
 
 #capabilities-section {
@@ -262,7 +255,7 @@ nav {
   }
 }
 
-.contact-link{
+.contact-link {
   color: $lightPrimary;
 }
 
