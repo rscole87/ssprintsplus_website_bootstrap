@@ -193,8 +193,23 @@ nav {
 
   .body-copy {
     color: $lightComplementary;
-    font-weight: 100;
+    font-weight: 400;
     max-width: 700px;
+  }
+
+  .contact-link{
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+#bio-div{
+  img{
+    border-radius: 10px;
+  }
+
+  a{
+    color: $lightPrimary;
   }
 }
 

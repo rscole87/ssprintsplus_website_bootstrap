@@ -55,7 +55,7 @@
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-              <form action="">
+              <form action="" method="POST" data-netlify="true">
                 <div class="row form-group">
                   <label class="col-sm-6" for="first-name">First Name</label>
                   <div class="col">
@@ -87,9 +87,9 @@
                 <div class="form-group row">
                   <label for="shirt-count" class="col-sm-6 col-form-label">Number of Shirts</label>
                   <div id="shirt-count" class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="shirt-count-option" id="front-graphic-selection" value="tent" checked /> 1 - 24 </label>
-                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="back-graphic-selection" value="rv" /> 25 - 49 </label>
-                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="both-graphic-selection" value="rv" /> 50+ </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="shirt-count-option" id="front-graphic-selection" value="1 - 24" checked /> 1 - 24 </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="back-graphic-selection" value="25 - 49" /> 25 - 49 </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="both-graphic-selection" value="50+" /> 50+ </label>
                   </div>
                 </div>
 
@@ -103,9 +103,9 @@
                 <div class="form-group row">
                   <label for="graphic-placement" class="col-sm-6 col-form-label">Graphic Placement</label>
                   <div id="graphic-placement" class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="graphic-placement-option" id="front-graphic-selection" value="tent" checked /> Front Side </label>
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="back-graphic-selection" value="rv" /> Back Side </label>
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="both-graphic-selection" value="rv" /> Both Front & Back </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="graphic-placement-option" id="front-graphic-selection" value="front side" checked /> Front Side </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="back-graphic-selection" value="back side" /> Back Side </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="both-graphic-selection" value="both front and back" /> Both Front & Back </label>
                   </div>
                 </div>
 
@@ -126,7 +126,7 @@
       <h3 class="heading-medium">About S&S Prints-Plus, LLC</h1>
     </div>
 
-    <div class="container">
+    <div id="bio-div" class="container">
       <div class="row">
         <div class="col-12 col-sm-4">
           <img src="./images/shirley-headshot.png" class="img-fluid mx-auto pb-4 d-block" alt="" />

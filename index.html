@@ -57,7 +57,7 @@
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-              <form action="">
+              <form action="" method="POST" data-netlify="true">
                 <div class="row form-group">
                   <label class="col-sm-6" for="first-name">First Name</label>
                   <div class="col">
@@ -89,9 +89,9 @@
                 <div class="form-group row">
                   <label for="shirt-count" class="col-sm-6 col-form-label">Number of Shirts</label>
                   <div id="shirt-count" class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="shirt-count-option" id="front-graphic-selection" value="tent" checked /> 1 - 24 </label>
-                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="back-graphic-selection" value="rv" /> 25 - 49 </label>
-                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="both-graphic-selection" value="rv" /> 50+ </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="shirt-count-option" id="front-graphic-selection" value="1 - 24" checked /> 1 - 24 </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="back-graphic-selection" value="25 - 49" /> 25 - 49 </label>
+                    <label for="shirt-count-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="shirt-count-option" id="both-graphic-selection" value="50+" /> 50+ </label>
                   </div>
                 </div>
 
@@ -105,9 +105,9 @@
                 <div class="form-group row">
                   <label for="graphic-placement" class="col-sm-6 col-form-label">Graphic Placement</label>
                   <div id="graphic-placement" class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="graphic-placement-option" id="front-graphic-selection" value="tent" checked /> Front Side </label>
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="back-graphic-selection" value="rv" /> Back Side </label>
-                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="both-graphic-selection" value="rv" /> Both Front & Back </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success active text-nowrap"> <input type="radio" name="graphic-placement-option" id="front-graphic-selection" value="front side" checked /> Front Side </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="back-graphic-selection" value="back side" /> Back Side </label>
+                    <label for="graphic-placement-option" class="btn btn-sm btn-outline-success text-nowrap"> <input type="radio" name="graphic-placement-option" id="both-graphic-selection" value="both front and back" /> Both Front & Back </label>
                   </div>
                 </div>
 
@@ -171,7 +171,7 @@
 
           <div class="col-12 col-sm-6">
             <h1>Print and press with S&S today!</h1>
-            <a href="./about.html" type="button" class="my-bttn">About Us ></a>
+            <a href="./about.html" class="my-bttn">About Us ></a>
           </div>
         </div>
       </div>
@@ -182,37 +182,37 @@
         <div class="row">
           <div class="heading-div col d-flex justify-content-between align-items-center">
             <h3 class="heading-medium">Featured Products</h3>
-            <a href="./products.html" type="button" class="my-bttn">See all products ></a>
+            <a href="./products.html" class="my-bttn">See all products ></a>
           </div>
         </div>
         <div id="featured-products-div" class="row">
           <div class="col-6 col-md-4 my-3">
-            <a type="button" class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
+            <a class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
               <img src="./images/feat-freedom.png" class="product-thumb" alt="" />
             </a>
           </div>
           <div class="col-6 col-md-4 my-3">
-            <a type="button" class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
+            <a class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
               <img src="./images/feat-vote.png" class="product-thumb" alt="" />
             </a>
           </div>
           <div class="col-6 col-md-4 my-3">
-            <a type="button" class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
+            <a class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
               <img src="./images/feat-involved.png" class="product-thumb" alt="" />
             </a>
           </div>
           <div class="col-6 col-md-4 my-3">
-            <a type="button" class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
+            <a class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
               <img src="./images/feat-pride.png" class="product-thumb" alt="" />
             </a>
           </div>
           <div class="col-6 col-md-4 my-3">
-            <a type="button" class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
+            <a class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
               <img src="./images/feat-love.png" class="product-thumb" alt="" />
             </a>
           </div>
           <div class="col-6 col-md-4 my-3">
-            <a type="button" class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
+            <a class="product-thumb-link" data-toggle="modal" data-target="#feature-modal">
               <img src="./images/feat-godsays.png" class="product-thumb" alt="" />
             </a>
           </div>
