@@ -8,6 +8,22 @@ const featureModalInner = document.getElementById("feature-modal-inner")
 
 const projects = [
   {
+    name: "Black 365+",
+    id: "project21",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/black365-WHITE.png",
+    imageDark: "../images/designs/black365-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Vote",
+    id: "project20",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/vote-WHITE.png",
+    imageDark: "../images/designs/vote-BLACK.png",
+    type: "shirt",
+  },
+  {
     name: "Grace for the Race",
     id: "project1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -16,13 +32,46 @@ const projects = [
     type: "shirt",
   },
   {
-    name: "C&C Window Tint",
-    id: "project2",
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    imageLight: "../images/designs/c&c-tint-WHITE.png",
-    imageDark: "../images/designs/c&c-tint-BLACK.png",
+    name: "Tackle Racism",
+    id: "project19",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/tackle-racism-WHITE.png",
+    imageDark: "../images/designs/tackle-racism-BLACK.png",
     type: "shirt",
   },
+  {
+    name: "Get Involved",
+    id: "project17",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/get-involved-WHITE.png",
+    imageDark: "../images/designs/get-involved-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "God Says I Am",
+    id: "project15",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/god-says-WHITE.png",
+    imageDark: "../images/designs/god-says-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Equality",
+    id: "project4",
+    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    imageLight: "../images/designs/equal-WHITE.png",
+    imageDark: "../images/designs/equal-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Turned 20 Twice",
+    id: "project14",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/turned-20-WHITE.png",
+    imageDark: "../images/designs/turned-20-BLACK.png",
+    type: "shirt",
+  },
+
   {
     name: "Cut",
     id: "project3",
@@ -32,11 +81,35 @@ const projects = [
     type: "shirt",
   },
   {
-    name: "Equality",
-    id: "project4",
-    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-    imageLight: "../images/designs/equal-WHITE.png",
-    imageDark: "../images/designs/equal-BLACK.png",
+    name: "Swarm Team Reunion Cruise",
+    id: "project13",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/swarm-team-WHITE.png",
+    imageDark: "../images/designs/swarm-team-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Love Creatively",
+    id: "project7",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/love-creatively-WHITE.png",
+    imageDark: "../images/designs/love-creatively-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Sharing Love",
+    id: "project8",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/love-god-WHITE.png",
+    imageDark: "../images/designs/love-god-BLACK.png",
+    type: "shirt",
+  },
+  {
+    name: "Stay With My Son",
+    id: "project12",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    imageLight: "../images/designs/stay-with-son-WHITE.png",
+    imageDark: "../images/designs/stay-with-son-BLACK.png",
     type: "shirt",
   },
   {
@@ -56,19 +129,11 @@ const projects = [
     type: "shirt",
   },
   {
-    name: "Love Creatively",
-    id: "project7",
+    name: "When You Can't Do What You Want",
+    id: "project18",
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/love-creatively-WHITE.png",
-    imageDark: "../images/designs/love-creatively-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "Sharing Love",
-    id: "project8",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/love-god-WHITE.png",
-    imageDark: "../images/designs/love-god-BLACK.png",
+    imageLight: "../images/designs/when-you-cant-WHITE.png",
+    imageDark: "../images/designs/when-you-cant-BLACK.png",
     type: "shirt",
   },
   {
@@ -95,38 +160,7 @@ const projects = [
     imageDark: "../images/designs/ray-lawn-BLACK.png",
     type: "shirt",
   },
-  {
-    name: "Stay With My Son",
-    id: "project12",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/stay-with-son-WHITE.png",
-    imageDark: "../images/designs/stay-with-son-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "Swarm Team Reunion Cruise",
-    id: "project13",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/swarm-team-WHITE.png",
-    imageDark: "../images/designs/swarm-team-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "Turned 20 Twice",
-    id: "project14",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/turned-20-WHITE.png",
-    imageDark: "../images/designs/turned-20-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "God Says I Am",
-    id: "project15",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/god-says-WHITE.png",
-    imageDark: "../images/designs/god-says-BLACK.png",
-    type: "shirt",
-  },
+
   {
     name: "WDI Landscaping",
     id: "project16",
@@ -136,35 +170,11 @@ const projects = [
     type: "shirt",
   },
   {
-    name: "Get Involved",
-    id: "project17",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/get-involved-WHITE.png",
-    imageDark: "../images/designs/get-involved-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "When You Can't Do What You Want",
-    id: "project18",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/when-you-cant-WHITE.png",
-    imageDark: "../images/designs/when-you-cant-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "Tackle Racism",
-    id: "project19",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/tackle-racism-WHITE.png",
-    imageDark: "../images/designs/tackle-racism-BLACK.png",
-    type: "shirt",
-  },
-  {
-    name: "Vote",
-    id: "project20",
-    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
-    imageLight: "../images/designs/vote-WHITE.png",
-    imageDark: "../images/designs/vote-BLACK.png",
+    name: "C&C Window Tint",
+    id: "project2",
+    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    imageLight: "../images/designs/c&c-tint-WHITE.png",
+    imageDark: "../images/designs/c&c-tint-BLACK.png",
     type: "shirt",
   },
 ]
@@ -210,23 +220,8 @@ productThumbLinks.forEach(function (anchor) {
   })
 })
 
-// const toggleVisability = function (image) {
-//   const activeClasses = Array.from(image.classList)
-//   if (!activeClasses.includes("hidden")) {
-//     image.classList.add("hidden")
-//   }
-// }
 
-function focusProject(product) {
-  // const images = Array.from(featureModalInner.getElementsByTagName("img"))
-  // console.log(images)
-  // images.forEach(function (image) {
-  //   if (image.src === product.src) {
-  //     image.classList.remove("hidden")
-  //   } else {
-  //     toggleVisability(image)
-  //   }
-  // }) 
+const focusProject = function (product) {
   activeImage.src = product.src
 }
 
