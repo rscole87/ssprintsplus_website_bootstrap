@@ -211,18 +211,19 @@ const shirts = [
   },
 ]
 
-const productThumbLinks = Array.from(document.getElementsByClassName("product-thumb-link"))
+const productThumbLinks = Array.from(document.getElementsByClassName("product-thumb"))
 
-productThumbLinks.forEach(function (anchor) {
-  const productImg = anchor.childNodes[1]
-  anchor.addEventListener("click", function () {
-    focusProject(productImg)
+productThumbLinks.forEach(function (img) {
+  console.log(img)
+  img.addEventListener("click", function () {
+    focusProject(img)
   })
 })
 
-
-const focusProject = function (product) {
-  activeImage.src = product.src
+const focusProject = function (img) {
+  console.log(img)
+  console.log(img.src)
+  activeImage.src = img.src
 }
 
 const filterProjects = function (type) {
